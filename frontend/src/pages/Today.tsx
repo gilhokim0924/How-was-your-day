@@ -1,11 +1,19 @@
 import React from 'react';
+import '../css/Today.css'
+import Navbar from '../components/Navbar';
 
-const Dashboard: React.FC = () => {
+const Today: React.FC = () => {
   return (
-    <div>
-      <h1>Welcome to the Dashboard</h1>
-    </div>
+    <>
+      <Navbar />
+      <section className="today-page">
+        <div className="today-container">
+          <h1>Welcome to Today</h1>
+          <p>Here you can track your daily mood and activities.</p>
+        </div>
+      </section>
+    </>
   );
 }
 
-export default Dashboard;
+export default Today;
