@@ -1,0 +1,99 @@
+.prenavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 3rem;
+  background: white;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.prenavbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  min-width: 800px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.prenavbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #111827;
+  cursor: pointer;
+  
+}
+
+.prenavbar-logo span {
+    margin: 8px;
+}
+
+.logo-image {
+  width: 32px;
+  height: 32px;
+  
+}
+
+.prenavbar-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.prenavbar-links button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #111827;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.prenavbar-links button:hover {
+  color: #3b82f6;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: #3b82f6;
+  color: white !important;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #3f89fe;
+  transform: scale(1.02); 
+  filter: brightness(1.1);
+}
+
+
+@media (max-width: 979px) {
+  .prenavbar-container {
+    width: 90%;
+    min-width: unset;
+    max-width: unset;
+  }
+}
