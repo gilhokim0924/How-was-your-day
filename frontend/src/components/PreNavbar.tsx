@@ -1,6 +1,8 @@
 import React from 'react';
 import '../css/PreNavbar.css';
 import logo from '../images/book-open.svg';
+import { Link } from 'react-router-dom';
+
 
 const PreNavbar: React.FC = () => {
   const scrollTo = (id: string) => {
@@ -20,7 +22,7 @@ const PreNavbar: React.FC = () => {
             <div className="prenavbar-links">
                 <button onClick={() => scrollTo('our-diary')}>Our Diary</button>
                 <button onClick={() => scrollTo('about-us')}>About us</button>
-                <a href="/login" className="login-button">Login / Sign up</a>
+                <Link to="/login" className="login-button">Login / Sign up</Link>
             </div>
         </div>
     </nav>
